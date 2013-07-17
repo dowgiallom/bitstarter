@@ -2,6 +2,7 @@
 //var text = textBuf.toString('utf8');
 
 var express = require('express');
+var fs = require('fs');
 
 var app = express.createServer(express.logger());
 
