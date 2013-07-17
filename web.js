@@ -1,5 +1,5 @@
 var textBuf = fs.readFileSync('index.html');
-var text = textBuf.toString('utf-8');
+var text = textBuf.toString('utf8');
 var express = require('express');
 
 var app = express.createServer(express.logger());
