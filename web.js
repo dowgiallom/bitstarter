@@ -1,11 +1,11 @@
 var textBuf = fs.readFileSync('index.html');
-
+var text = textBuf.toString('utf-8');
 var express = require('express');
 
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send(textBuf.toString);
+  response.send(text);
 });
 
 var port = process.env.PORT || 5000;
