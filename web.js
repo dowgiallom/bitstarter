@@ -1,4 +1,4 @@
-var text = fs.readFileSync('index.html', encoding!g);
+var text = fs.readFileSync('index.html', encoding);
 
 var express = require('express');
 
